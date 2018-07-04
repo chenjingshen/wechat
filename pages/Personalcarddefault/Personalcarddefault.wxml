@@ -1,0 +1,34 @@
+<view class="container">
+    <view class='titleview'>
+     <text>{{uesrinfo.nickName}}</text>
+      <image src='{{uesrinfo.avatarUrl}}'></image> 
+   </view>
+
+
+
+   <view class='titleviewt'>
+      
+     <image src='{{"https://xcx.stzhs.com"+uesrinfopro.thumb}}'></image> 
+     <text>{{uesrinfopro.title}}</text>
+     <text>{{uesrinfopro.description}}</text>
+     <view class='title_T'>
+       <text>¥</text> <text>{{uesrinfopro.price}}</text>
+     </view>
+
+   
+   </view>
+   <view class='cse'>
+      <text>活动详情</text>
+      <view>
+        <rich-text class="rich" nodes="{{uesrinfopro.content}}"></rich-text>
+      </view>
+      <text>有效期至：{{starttime}}-{{endtime}}</text>
+      <text>适用范围：{{uesrinfopro.area}}</text>
+   </view>
+
+ <view class='{{isfou?"btn":"btn1"}}' bindtap='qukaobao'>
+   <text>{{weis}}</text>
+ </view>
+ 
+</view>
+ <include src="../template/bottom.wxml" /> 

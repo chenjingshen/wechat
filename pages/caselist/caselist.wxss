@@ -1,0 +1,36 @@
+.banner{width: 100%;height: 311rpx;overflow: hidden;}
+.banner image{display: block;
+margin: 0 auto;width: 100%;height: 311rpx;}
+
+.caselistnaw{width: 690rpx;margin: 0 auto;border: 1px solid #dcdcdc;margin-top: 10rpx}
+.caselistnaw .listnaw{display: flex;width: 100%}
+
+.caselistnaw .listnaw_t{flex: 1;display: flex;align-items: center;font-size: 0.68rem;justify-content: center;line-height: 1.8rem;border-right: 1px solid #dcdcdc;color: #adadad}
+.caselistnaw .listnaw_t:last-of-type{border-right: none}
+.caselistnaw .listnaw_t image{width: 19rpx;height: 12rpx;margin-left:0.3rem}
+
+.listvicsnaw{width: 100%;display: flex}
+.listvicsnaw >text{width: 80rpx;font-size: 0.68rem;text-align: right;line-height: 1.5rem;color: #b5121c;font-weight: bold}
+.listvicsnaw .listvicsnaw_t{width: 590rpx;font-size:0.68rem;line-height: 1.2rem;color: #adadad;display: flex;flex-wrap: wrap;box-sizing: border-box;padding-left: 15rpx;margin-top: 10rpx;padding-bottom: 20rpx}
+.listvicsnaw .listvicsnaw_t text{padding: 0 6rpx}
+
+.action{color: #b5121c}
+
+.filter{width: 690rpx;margin: 0.8rem auto;display: flex;flex-wrap: wrap}
+.filter text{display: flex;border: 1px solid #dcdcdc;line-height: 1.5rem;color: #adadad;font-size: 0.54rem;padding: 0 10rpx;box-sizing: border-box;margin: 0 5rpx;justify-content: center;align-items: center;margin-top: 10rpx}
+.filter text:after{content: "x";font-size: 0.6rem;color: #716f6f;border: 1px solid #b5121c;display: block;width: 20rpx;line-height: 20rpx;text-align: center;border-radius: 20rpx;height: 20rpx;margin-left: 10rpx}
+
+.listcaseview{width: 100%;}
+.listcaseview .listcaseview_t{width: 690rpx;margin: 0 auto;border-radius: 20rpx;overflow: hidden;box-shadow: 0rpx 3rpx 3rpx 0rpx #edebeb;position: relative}
+.listcaseview .listcaseview_t .listcasetp{position: absolute;background: #b5121c;top: 20rpx;font-size: 0.6rem;color: #fff;padding: 0.2rem 1rem;border-radius: 20rpx;left: 20rpx}
+.listcase_m{width: 100%;display: flex}
+.listcase_m .listcase_m_d{display: flex;align-items: center;padding: 0.6rem 0.8rem;box-sizing: border-box;font-size: 0.68rem;color: #b5121c}
+.listcase_m image{width: 37rpx;height: 40rpx;display: block;margin-right: 0.5rem}
+
+.listcasejs{width: 690rpx;margin: 0.8rem auto;display: flex;}
+.listcasejs image{width: 175rpx;height: 175rpx;border-radius: 100rpx;margin-left: 80rpx}
+.listcasejs .listcasejs_t{width: 425rpx;font-size: 0.54rem;color: #666;box-sizing: border-box;padding: 0 20rpx }
+.listcasejs .listcasejs_t text{display: block;padding: 0.1rem 0}
+.listcasejs .listcasejs_t .tt{font-weight: bold;color: #111}
+
+.listcasemore{width: 100%;background: #e6e6e6;color: #515151;font-size: 0.54rem;padding: 0.3rem 0;text-align: center}

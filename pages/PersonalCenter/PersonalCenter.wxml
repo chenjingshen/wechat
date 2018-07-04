@@ -1,0 +1,67 @@
+<view class="container">
+   <view class='titleview'>
+     <text>{{uesrinfo.nickName}}</text>
+      <image src='{{uesrinfo.avatarUrl}}'></image> 
+   </view>
+
+
+   <view class='titleviewt'>
+
+      <view class='nawperson'>
+         <view class='nawperson_t' bindtap='goCustomer'>
+             <image src='{{picturedata.cardico}}'></image>
+             <text>我的卡包</text>
+             <image src='{{picturedata.icoviewle}}' class='texy'></image>
+         </view>
+      </view>
+       <view class='nawperson'>
+         <view class='nawperson_t' bindtap='changehouse'>
+             <image src='{{picturedata.houseico}}'></image>
+             <text>我的收藏</text>
+             <!-- <image src='{{picturedata.icoviewbottom}}' class='texy'></image> -->
+              <image src='{{house ? picturedata.icoviewbottom : picturedata.icoviewle}}' class='texy'></image>
+         </view>
+         <view class='nawperson_t' wx:if="{{house}}" bindtap='gocase'>
+             <image src='{{picturedata.icoviewle}}'></image>
+             <text>案例收藏</text>
+             <!-- <image src='{{picturedata.icoviewle}}'></image> -->
+         </view>
+        
+      </view>
+
+       <view class='nawperson'>
+         <view class='nawperson_t' bindtap='changemake'>
+             <image src='{{picturedata.makeioc}}'></image>
+             <text>我的预约</text>
+             <image src='{{make ? picturedata.icoviewbottom : picturedata.icoviewle}}' class='texy'></image>
+         </view>
+          <view class='nawperson_t' wx:if="{{make}}" bindtap='gosjs' data-catid='35'>
+             <image src='{{picturedata.icoviewle}}' data-catid='35'></image>
+             <text data-catid='35'>预约设计师</text>
+             <!-- <image src='{{picturedata.icoviewle}}' class='texy'></image> -->
+         </view>
+          <view class='nawperson_t' wx:if="{{make}}" bindtap='gosjs' data-catid='59'>
+             <image src='{{picturedata.icoviewle}}' data-catid='59'></image>
+             <text data-catid='59'>预约工长</text>
+             <!-- <image src='{{picturedata.icoviewle}}' class='texy'></image> -->
+         </view>
+           <view class='nawperson_t' wx:if="{{make}}" bindtap='gosjs' data-catid='60'>
+             <image src='{{picturedata.icoviewle}}' data-catid='60'></image>
+             <text data-catid='60'>预约监理</text>
+             <!-- <image src='{{picturedata.icoviewle}}' class='texy'></image> -->
+         </view>
+      </view>
+
+       <view class='nawperson'>
+         <view class='nawperson_t' bindtap='goPersonal'>
+             <image src='{{picturedata.customerico}}'></image>
+             <text>客服</text>
+             <image src='{{picturedata.icoviewle}}' class='texy'></image>
+         </view>
+      </view>
+
+   </view>
+
+
+</view>
+ <include src="../template/bottom.wxml" /> 

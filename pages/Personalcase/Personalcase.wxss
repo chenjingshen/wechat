@@ -1,0 +1,12 @@
+.indexteamqu{width: 690rpx;margin: 0 auto;border-radius: 25rpx;overflow: hidden;position: relative;margin-top: 30rpx}
+.indexteamqu_t{width: 100%;background: rgba(0, 0, 0, 0.2);box-sizing: border-box;padding:0.4rem 25rpx;position: absolute;bottom: 0;left: 0}
+.indexteamqu_t .teamqu_t{display: flex;font-size: 20rpx;color: #fff;padding: 0.1rem 0}
+.indexteamqu_t .teamqu_t text:first-of-type{display: block;width: 100rpx}
+.indexteamqu_t .teamqu_t text:last-of-type{width: 500rpx;display: block}
+
+.more{width: 690rpx;font-size: 0.6rem;line-height: 1.5rem;color: #111;text-align: center;background: #e6e6e6;margin: 0.8rem auto}
+
+.titleview{width: 100%;display: flex;justify-content: space-between;align-items: center;box-sizing: border-box;padding: 20rpx 40rpx;background: #ededed;font-size: 35rpx;font-weight: bold;color: #040404}
+.titleview image{width: 166rpx;height: 166rpx;border-radius: 100rpx}
+
+.indexteamqu_tt{position: absolute;top: 20rpx;width: 200rpx;text-align: center;background: #b5121c;color: #fff;font-size: 20rpx;padding: 10rpx 0;border-radius: 16rpx;left: 16rpx}

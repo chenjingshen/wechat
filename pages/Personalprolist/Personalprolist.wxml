@@ -1,0 +1,23 @@
+<view class="container">
+  <!-- <image src='{{picturedata.activbananr}}' mode='widthFix'></image> -->
+
+  <view class='titleview'>
+     <text>{{uesrinfo.nickName}}</text>
+      <image src='{{uesrinfo.avatarUrl}}'></image> 
+   </view>
+
+
+  <view class='sultaview' wx:for='{{otherinfo}}'>
+      <image src='{{"https://xcx.stzhs.com"+item.info.thumb}}' mode='wtdthFix'></image>
+     <view class='sultaview_t'>
+        <text>设计师：{{item.info.title}}</text>
+        <text>集团职位：{{item.info.job}}</text>
+        <text>擅长风格：{{item.info.fengge}}</text>
+        <text>设计格言：{{item.info.geyan}}</text>
+     </view>
+  </view>
+
+   
+
+</view>
+ <include src="../template/bottom.wxml" /> 

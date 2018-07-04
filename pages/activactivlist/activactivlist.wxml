@@ -1,0 +1,40 @@
+<view class="container">
+  <image src='{{picturedata.activbananr}}' mode='widthFix'></image>
+
+  <view class='sultationnaw'>
+     
+      <image src='{{picturedata.activityico}}' mode='widthFix'></image>
+      
+      <view class='sula_t' bindtap='gohuodong'>
+         <image src='{{picturedata.activitynaw1}}'></image>
+         <text>活动</text>
+      </view>
+      <view class='sula_t'>
+         <image src='{{picturedata.activitynaw2}}'></image>
+         <text class='tt'>产品展厅</text>
+      </view>
+      <view class='sula_t' bindtap='gocartlist'>
+         <image src='{{picturedata.activitynaw3}}'></image>
+         <text>领取卡券</text>
+      </view>
+  </view>
+
+  <view class='sultaview'>
+     <image src='{{picturedata.acitivhoudong}}' mode='widthFix'></image>
+  </view>
+
+
+  <view class='sulaviewlst' wx:for='{{activact}}' bindtap='goprodefaulf' data-index='{{index}}'>
+    <image src='{{"https://xcx.stzhs.com"+item.thumb}}' data-index='{{index}}'></image>
+    <view class="sulist" data-index='{{index}}'>
+       <text data-index='{{index}}'>{{item.title}}</text>
+       <text data-index='{{index}}'>产品分类：{{item.catname}}</text>
+       <text data-index='{{index}}'>{{item.description}}</text>
+    </view>
+  </view>
+
+   
+
+</view>
+
+ <include src="../template/bottom.wxml" /> 

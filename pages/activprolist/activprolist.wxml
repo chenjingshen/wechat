@@ -1,0 +1,33 @@
+<view class="container">
+  <image src='{{picturedata.activbananr}}' mode='widthFix'></image>
+
+  <view class='sultationnaw'>
+     
+      <image src='{{picturedata.activityico}}' mode='widthFix'></image>
+      
+      <view class='sula_t'>
+         <image src='{{picturedata.activitynaw1}}'></image>
+         <text class='tt'>活动</text>
+      </view>
+      <view class='sula_t' bindtap='goprolist'>
+         <image src='{{picturedata.activitynaw2}}'></image>
+         <text>产品展厅</text>
+      </view>
+      <view class='sula_t' bindtap='gocartlist'>
+         <image src='{{picturedata.activitynaw3}}'></image>
+         <text>领取卡券</text>
+      </view>
+  </view>
+
+  <view class='sultaview' wx:for='{{activact}}' bindtap='godeflpro'>
+      <image src='{{"https://xcx.stzhs.com" + item.thumb}}' mode='wtdthFix' data-catid='{{item.catid}}' data-id='{{item.id}}'></image>
+     <view class='sultaview_t' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.title}}</text>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.template}}</text>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>活动时间：{{pldate[index]}}</text>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>查看详情 >></text>
+     </view>
+  </view>
+
+</view>
+ <include src="../template/bottom.wxml" /> 

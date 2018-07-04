@@ -1,0 +1,14 @@
+
+<image src='{{"http://xcx.stzhs.com"+item.thumb}}' mode='widthFix'  wx:for='{{imgadds}}'></image>
+
+
+
+
+
+
+
+
+
+
+
+ <include src="../template/bottom.wxml" /> 

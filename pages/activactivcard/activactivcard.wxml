@@ -1,0 +1,52 @@
+<view class="container">
+  <image src='{{picturedata.activbananr}}' mode='widthFix'></image>
+
+  <view class='sultationnaw'>
+     
+      <image src='{{picturedata.activityico}}' mode='widthFix'></image>
+      
+      <view class='sula_t' bindtap='gohuodong'>
+         <image src='{{picturedata.activitynaw1}}'></image>
+         <text>活动</text>
+      </view>
+      <view class='sula_t' bindtap='goproduct'>
+         <image src='{{picturedata.activitynaw2}}'></image>
+         <text>产品展厅</text>
+      </view>
+      <view class='sula_t'>
+         <image src='{{picturedata.activitynaw3}}'></image>
+         <text  class='tt'>领取卡券</text>
+      </view>
+  </view>
+
+
+    <view class='titleviewt'>
+
+
+     <view class='tite' wx:for='{{newdata}}' bindtap='goidcard'>
+         <view class='title_top' data-id='{{item.id}}' data-modelid='{{item.modelid}}'>
+            <view class='titletop_m' data-id='{{item.id}}' data-modelid='{{item.modelid}}'>
+                <view class='stt'>
+                  <text>¥</text> <text data-id='{{item.id}}' data-modelid='{{item.modelid}}'>{{item.price}}</text>
+                </view>
+                <text data-id='{{item.id}}' data-modelid='{{item.modelid}}'>优惠券</text>
+            </view>
+            <view class='titletop_js' data-id='{{item.id}}' data-modelid='{{item.modelid}}'>
+               <text data-id='{{item.id}}' data-modelid='{{item.modelid}}'>{{item.title}}</text>
+               <text data-id='{{item.id}}' data-modelid='{{item.modelid}}'>有效期至：{{time[index]}}</text>
+            </view>
+         </view>
+         <view class='title_bottm' data-id='{{item.id}}' data-modelid='{{item.modelid}}'>
+             {{item.shiyong}} 
+         </view>
+     </view>
+     
+   </view>
+
+
+
+   
+
+</view>
+
+ <include src="../template/bottom.wxml" /> 

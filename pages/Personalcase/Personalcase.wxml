@@ -1,0 +1,38 @@
+<view class='container'>
+  <view class='titleview'>
+     <text>{{uesrinfo.nickName}}</text>
+      <image src='{{uesrinfo.avatarUrl}}'></image> 
+   </view>
+
+
+
+  <!-- <image src='{{picturedata.indexteambananr}}' mode='widthFix'></image>  -->
+
+
+  <view class='indexteamqu' wx:for='{{otherinfo}}' bindtap='gocasepage'>
+      <image src='{{"https://xcx.stzhs.com"+item.info.thumb}}' mode='widthFix' data-catid='{{item.catid}}' data-id='{{item.id}}'></image>
+      <view class='indexteamqu_t' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+          <view class='teamqu_t' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'>项目名称:</text>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.title}}</text>
+          </view>
+          <view class='teamqu_t' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'> 项目地址:</text>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.info.qy}}</text>
+          </view>
+          <view class='teamqu_t' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'>项目面积:</text>
+            <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.info.mj}}</text>
+          </view>
+      </view>
+      <view class='indexteamqu_tt' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>LOFT风格</text>
+      </view>
+    </view>
+
+
+
+
+
+</view>
+ <include src="../template/bottom.wxml" /> 

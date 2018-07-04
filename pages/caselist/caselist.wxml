@@ -1,0 +1,67 @@
+<view class="container">
+    <swiper class="banner" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" 
+      duration="{{duration}}" indicator-color="#0b080b" indicator-active-color="#737580">
+      <block wx:for="{{picturedata.bananr}}" >
+            <swiper-item >
+              <image src="{{item.url}}" class="slide-image" />
+            </swiper-item>
+            </block>
+    </swiper>
+    <view class='caselistnaw'>
+      <view class='listnaw'>
+        <view class='listnaw_t' wx:for="{{listnaw}}" bindtap='changenaw' data-index='{{index}}'>
+           <text data-index='{{index}}' class='{{num==index ? "action" : ""}}'>{{item.name}}</text>
+           <image src='{{num==index ? picturedata.actionico : picturedata.ico }}'></image>
+        </view>
+      </view>
+      <view class='listvicsnaw'>
+         <text>全部</text>
+         <view class='listvicsnaw_t'>
+            <text wx:for="{{fornum}}" bindtap='listvicsnaw' data-tit='{{item}}' data-index='{{index}}'>{{item}}</text>
+         </view>
+      </view>
+    </view>
+    <view class='filter'>
+          <text wx:for="{{nawindex}}" bindtap='delenaw' data-index='{{index}}'>{{item.name}}</text>
+    </view>
+
+
+    <view class='listcaseview' wx:for="{{caselist}}">
+      <view class='listcaseview_t' bindtap='gocasepage'>
+          <image src='{{"https://xcx.stzhs.com"+item.thumb}}' mode='widthFix' data-catid='{{item.catid}}' data-id='{{item.id}}'></image>
+          <view class='listcase_m' data-catid='{{item.catid}}' data-id="{{item.id}}">
+             <view class='listcase_m_d'>
+               <image src='{{picturedata.list11}}' mode='widthFix' data-catid='{{item.catid}}' data-id="{{item.id}}"></image>
+               <text>{{item.vote_count}}</text>
+             </view>
+             <view class='listcase_m_d'>
+               <image src='{{picturedata.list22}}' mode='widthFix' data-catid='{{item.catid}}' data-id="{{item.id}}"></image>
+               <text>{{item.favorite_count}}</text>
+             </view>
+             <view class='listcase_m_d'>
+               <image src='{{picturedata.list33}}' mode='widthFix' data-catid='{{item.catid}}' data-id="{{item.id}}"></image>
+               <text>{{item.comment_count}}</text>
+             </view>
+          </view>
+          <view class='listcasetp'>
+              {{item.fg}}
+          </view>
+      </view>
+      <view class='listcasejs'>
+         <image src='{{"https://xcx.stzhs.com"+item.man.thumb}}'></image>
+         <view class='listcasejs_t'>
+           <text class='tt'>设计师：{{item.man.title}}</text>
+           <text class='tt'>项目名称：{{item.title}}</text>
+           <text>项目地址：{{item.lp}}</text>
+           <text>项目面积：{{item.mj}}</text>
+           <text>设计风格：{{item.fg}}</text>
+         </view>
+      </view>
+    </view>
+
+    <view class='listcasemore' bindtap='more'>
+       点击加载更多
+    </view>
+</view>
+<include src="../template/bottom.wxml" /> 

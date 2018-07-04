@@ -1,0 +1,51 @@
+ <view class="dt"></view> 
+  
+<view class="db">
+
+    <navigator open-type="redirect" url="../index/index" class="navigator">
+       <block  wx:if="{{route=='pages/index/index'}}">
+            <view class="db_img"><image src="../image/naw1_1.jpg" mode='widthFix'></image></view>
+            <text class='on'>首页</text>
+      </block>
+      <block  wx:if="{{route!='pages/index/index'}}">
+            <view class="db_img"><image src="../image/naw1.jpg" mode='widthFix'></image></view>
+            <text>首页</text>
+      </block>
+    </navigator>
+
+    <navigator open-type="redirect" url="../caselist/caselist" class="navigator">
+        <block  wx:if="{{route=='pages/caselist/caselist'}}">
+            <view class="db_img"><image src="../image/naw2.jpg" mode='widthFix'></image></view>
+            <text class='on'>案例</text>
+         </block>
+      <block  wx:if="{{route!='pages/caselist/caselist'}}">
+            <view class="db_img"><image src="../image/naw2_1.jpg" mode='widthFix'></image></view>
+            <text >案例</text>
+      </block> 
+    </navigator>
+
+      <navigator open-type="redirect" url="../activprolist/activprolist" class="navigator">
+            <block  wx:if="{{route=='pages/activprolist/activprolist'}}">
+            <view class="db_img"><image src="../image/naw3_1.jpg" mode='widthFix'></image></view>
+            <text class='on'>活动</text>
+      </block>
+      <block  wx:if="{{route!='pages/activprolist/activprolist'}}">
+            <view class="db_img"><image src="../image/naw3.jpg" mode='widthFix'></image></view>
+            <text>活动</text>
+      </block>
+    </navigator>
+
+        <navigator open-type="redirect" url="../PersonalCenter/PersonalCenter" class="navigator">
+              <block  wx:if="{{route=='pages/PersonalCenter/PersonalCenter'}}">
+            <view class="db_img"><image src="../image/naw4_1.jpg" mode='widthFix'></image></view>
+            <text class='on'>个人中心</text>
+      </block>
+      <block  wx:if="{{route!='pages/PersonalCenter/PersonalCenter'}}">
+            <view class="db_img"><image src="../image/naw4.jpg" mode='widthFix'></image></view>
+            <text>个人中心</text>
+      </block>
+    </navigator>
+
+
+ </view>
+

@@ -1,0 +1,28 @@
+<view class="container">
+    <view class='titleview'>
+     <text>{{uesrinfo.nickName}}</text>
+      <image src='{{uesrinfo.avatarUrl}}'></image> 
+   </view>
+
+
+
+   <view class='titleviewt'>
+
+
+       <view class='nawperson'>
+         <view class='nawperson_t' bindtap='calltelephone'>
+             <image src='{{picturedata.customerico}}'></image>
+             <text>联系客服
+                客服热线：0755-82132600 </text>
+         </view>
+      </view>
+
+
+
+
+
+   </view>
+
+
+</view>
+ <include src="../template/bottom.wxml" /> 

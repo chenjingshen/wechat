@@ -1,0 +1,47 @@
+<view class = "container"> 
+    <view class='bananr'>
+       <image src='{{picturedata.bananr}}' mode='widthFix'></image>
+       <view  class='fromview'>
+          <text>算算我的办公室装修多少钱</text>
+          <form bindsubmit="formSubmit">
+              <label>
+                 <image src='{{picturedata.frico[0].url}}'></image>
+                 <text>项目地址</text>
+                 <input type='text' name='subject' value='{{subject}}'></input>
+              </label>
+              <label>
+                 <image src='{{picturedata.frico[1].url}}'></image>
+                 <text>建筑面积</text>
+                 <input type='text' name='introduce' value='{{introduce}}'></input>
+              </label>
+              <label>
+                 <image src='{{picturedata.frico[2].url}}'></image>
+                 <text>手机号码</text>
+                 <input type='number' name='phone' value='{{phone}}'></input>
+              </label>
+              <button formType="submit">获取免费报价</button>
+          </form>
+           <view> *已对您的信息严格保密，放心填写</view>
+       </view>
+    </view>
+    <view class='productview'>
+        <view class='pro' wx:for="{{suanx}}" data-name='{{item[0]}}' data-key='{{item[1]}}' bindtap='goindexhy'>
+           <text data-name='{{item[0]}}' data-key='{{item[1]}}'>{{item[0]}}</text>
+        </view>
+    </view>
+    <view class='caseimg' wx:for="{{picturedata.indexse}}">
+        <image src='{{item.url}}' mode='widthFix'></image>
+    </view>
+    <view class='fooder'>
+       <image src='{{picturedata.indexsefoot}}' mode='widthFix'></image> 
+       <view class='fooder_t'>
+           <text>申请报价的同时
+您还可获得增值服务</text>
+          <button>免费量房服务</button>
+          <button>免费设计咨询</button>
+          <button>免费出规划方案</button>
+       </view>
+    </view>
+</view>
+
+ <include src="../template/bottom.wxml" /> 

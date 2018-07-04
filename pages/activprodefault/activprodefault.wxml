@@ -1,0 +1,56 @@
+<view class="container">
+  <image src='{{picturedata.activbananr}}' mode='widthFix'></image>
+
+  <view class='sultationnaw'>
+     
+      <image src='{{picturedata.activityico}}' mode='widthFix'></image>
+      
+      <view class='sula_t' bindtap='goactiv'>
+         <image src='{{picturedata.activitynaw1}}'></image>
+         <text>活动</text>
+      </view>
+      <view class='sula_t'>
+         <image src='{{picturedata.activitynaw2}}'></image>
+         <text class='dett'>产品展厅</text>
+      </view>
+      <view class='sula_t'>
+         <image src='{{picturedata.activitynaw3}}'></image>
+         <text>领取卡券</text>
+      </view>
+  </view>
+
+  <view class='sultaview'>
+      <view class='sultaview_c'>
+          <image src='{{"https://xcx.stzhs.com"+actprodefaulfdata.thumb}}' mode='widthFix'></image>
+          <!-- <view class='lqu'>
+             <view class='lqu1' bindtap='lqdian'>
+                  <image src='{{picturedata.lxkbao}}' mode='widthFix'></image>
+                 <text>领取卡券</text>
+             </view>
+               <view class='lqu1'>
+                  <image src='{{picturedata.dianzhan}}' mode='widthFix'></image>
+                 <text>点赞</text>
+             </view>
+          </view> -->
+      </view>
+      <view class='sultaview_t'>
+        <text>{{actprodefaulfdata.title}}</text>
+        <text>产品分类：{{actprodefaulfdata.catname}}</text>
+        <rich-text class="rich" nodes="{{actprodefaulfdata.content}}"></rich-text>
+        <text>订购电话：0755-29169119</text>
+      </view>
+  </view>
+
+  <view class='pactivpro'>
+     <view class='actititle'>
+        <text>相关推荐</text>
+     </view>
+     <view class='productview'>
+       <image src='{{"https://xcx.stzhs.com"+item.thumb}}' wx:for='{{lsitpro}}' bindtap='changepro' data-index='{{index}}'></image>
+     </view>
+  </view>
+
+   
+
+</view>
+<include src="../template/bottom.wxml" /> 

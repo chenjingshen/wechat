@@ -1,0 +1,17 @@
+.sultationnaw{width: 710rpx;margin: 0 auto;display: flex;justify-content: space-between;padding: 40rpx 0}
+.sultationnaw .sula_t{width: 139rpx;font-size: 0.64rem;text-align: center}
+.sultationnaw .sula_t image{height: 139rpx;margin-bottom: 15rpx}
+
+.sultaview{width: 710rpx;margin: 30rpx auto;display: flex;justify-content: space-between;}
+.sultaview image{height: 191rpx;width: 262rpx;box-shadow: 5rpx 2rpx 6rpx 0rpx #b3b2b2;border-radius: 20rpx}
+.sultaview .sultaview_t{width: 437rpx;font-size: 20rpx;box-shadow: 0rpx 3rpx 5rpx 5rpx #efeded;padding: 0.2rem 0.5rem;box-sizing: border-box}
+.sultaview .sultaview_t text:first-of-type{display: block;color: #131112;font-weight: bold;padding: 10rpx 0}
+.sultaview .sultaview_t text:nth-of-type(2){color: #666;display: block;line-height: 25rpx}
+.sultaview .sultaview_t text:nth-of-type(3){color: #b3b3b3;width: 100%;text-align: right;display: block;margin-top: -5rpx}
+
+.sultaviewcase{width: 100%;text-align: center;font-size: 0.65rem;color: #000;font-weight: bold;padding: 20rpx 0}
+.sultaviewcase .liust{width: 100%;display: flex;justify-content: center;align-items: center}
+.sultaviewcase .liust text:last-of-type{color: #b5121c;display: block;margin: 0 10rpx}
+.sultaviewcase .liust image{width: 20rpx;height: 20rpx}
+.more{font-size: 30rpx;color: #666;text-align: center;padding: 20rpx 0}
+.tt{color: #b5121c}

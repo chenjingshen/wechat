@@ -1,0 +1,37 @@
+<view class="container">
+  <image src='{{picturedata.indexsultationbananr}}' mode='widthFix'></image>
+
+  <view class='sultationnaw'>
+      <view class='sula_t' wx:for="{{newlist}}" bindtap='changenaw'>
+         <image src='{{picturedata.consultationnaw1[index].url}}' data-catid='{{item.catid}}'></image>
+         <text data-catid='{{item.catid}}' class='{{catid==item.catid?"tt":""}}'>{{item.catname}}</text>
+      </view>
+  </view>
+
+  <view class='sultaview' wx:for='{{newdata}}' bindtap='godefaulf'>
+      <image src='{{"https://xcx.stzhs.com"+item.thumb}}' mode='wtdthFix'  data-catid='{{item.catid}}' data-id='{{item.id}}'></image>
+     <view class='sultaview_t'data-catid='{{item.catid}}' data-id='{{item.id}}' >
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.title}}</text>
+        <text data-catid='{{item.catid}}' data-id='{{item.id}}'>{{pldatedesc[index]}}..
+        
+        {{pldate[index]}}</text>
+        <text data-index='{{index}}'>查看详情 >></text>
+     </view>    
+  </view>
+
+    <view class='more' bindtap='tremmore'>
+      加载更多
+    </view>
+
+  <view class='sultaviewcase'>
+      <view class='liust'>
+         <text>装修热线：0755-29559106</text>  <text>拨打热线</text>  <image src='{{picturedata.indexsultationioc}}'></image>
+      </view>
+      <view class='liust'>
+         <text>版权所有：深圳市尚泰装饰设计工程有限公司</text> <text></text>
+      </view>
+  </view>
+
+</view>
+
+<include src="../template/bottom.wxml" /> 

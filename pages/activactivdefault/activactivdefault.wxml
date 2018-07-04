@@ -1,0 +1,27 @@
+  <swiper class="banner" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" 
+      duration="{{duration}}" indicator-color="#0b080b" indicator-active-color="#737580">
+    
+      <block wx:for='{{bananr}}'>
+            <swiper-item>
+             <image src='{{"https://xcx.stzhs.com"+item.thumb}}'></image> 
+            </swiper-item>
+      </block>
+
+    </swiper>
+ <view class='title'>
+  <text>{{newdefaulf.title}}</text>
+ </view>
+ <view class='titleantor'>
+    <text>{{pldate}}</text>  <text>小泰</text>  <text>尚泰装饰</text>
+ </view>
+
+ <view class='content'>
+   <rich-text class="rich" nodes="{{content}}"></rich-text> 
+ </view>
+
+
+<view class='lq' bindtap='gocard' wx:if='{{isfos}}'>
+  领取卡券
+</view>
+ <include src="../template/bottom.wxml" /> 

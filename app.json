@@ -1,0 +1,45 @@
+{
+  "pages":[
+    
+
+      "pages/index/index",
+      "pages/indexfwlc/indexfwlc",
+      "pages/indexcase/indexcase",
+      "pages/indexteam/indexteam",
+      "pages/indexsultation/indexsultation",
+      "pages/indexabout/indexabout",
+     
+
+    "pages/PersonalCenter/PersonalCenter",
+  "pages/Personalcase/Personalcase",
+  "pages/Personalprolist/Personalprolist",
+  "pages/Personalcard/Personalcard",
+  "pages/Personalcarddefault/Personalcarddefault",
+  "pages/Personalcustomer/Personalcustomer",
+
+
+      "pages/activactivcard/activactivcard",
+      "pages/activprolist/activprolist",
+      "pages/activactivlist/activactivlist",
+      "pages/activprodefault/activprodefault",
+      "pages/activactivdefault/activactivdefault",
+      
+
+        "pages/caselist/caselist",
+        "pages/casepages/casepages"
+
+       
+
+
+    
+   
+   
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "尚泰装饰",
+    "navigationBarTextStyle":"black"
+  }
+}

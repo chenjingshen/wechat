@@ -1,0 +1,16 @@
+.titleview{width: 100%;display: flex;justify-content: space-between;align-items: center;box-sizing: border-box;padding: 20rpx 40rpx;background: #ededed;font-size: 35rpx;font-weight: bold;color: #040404}
+.titleview image{width: 166rpx;height: 166rpx;border-radius: 100rpx}
+
+.titleviewt{width: 700rpx;margin:0 auto;padding-bottom: 40rpx}
+.titleviewt >image{width: 204rpx;height: 120rpx;margin: 30rpx auto}
+.titleviewt >text:first-of-type{font-size: 40rpx;color: #040404;font-weight: bold;display: block;text-align: center}
+.titleviewt >text:nth-of-type(2){font-size: 40rpx;color: #040404;font-weight: bold;display: block;text-align: center}
+.titleviewt .title_T{text-align: center;font-size: 55rpx;font-weight: bold;padding: 30rpx 0;border-bottom: 5rpx solid #b5121c}
+.titleviewt .title_T text:first-of-type{font-size: 30rpx;}
+
+.cse{font-size: 18rpx;width: 550rpx;margin: 0 auto;color: #666;line-height: 30rpx;padding-bottom: 40rpx}
+.cse>text:nth-of-type(2){display: block;text-align: center;line-height: 50rpx}
+.cse>text:nth-of-type(3){display: block;text-align: center;line-height: 30rpx}
+
+.btn{width: 100%;font-size: 30rpx;color: #fff;background: #44b829;padding: 20rpx 0;text-align: center}
+.btn1{width: 100%;font-size: 30rpx;color: #fff;background: #b5b5b5;padding: 20rpx 0;text-align: center}

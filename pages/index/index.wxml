@@ -1,0 +1,123 @@
+<swiper class='swiper'>
+  <swiper-item wx:for='{{bananr}}'>
+     <image src='{{"https://xcx.stzhs.com"+item.thumb}}'></image> 
+  </swiper-item>
+</swiper>
+<!-- <button bindtap='sut'> ssss</button> -->
+<view class='layoutTop'>
+  <view class='layoutTopHeader'>
+    <view>
+      <image src='{{imgUrl.index02}}'></image>
+      <view>
+        <view>尚泰装饰集团</view>
+        <view>深圳西丽方大城</view>
+      </view>
+    </view>
+    <view>400-088-0848</view>
+    <view bindtap='calltelephone'>
+      <image src='{{imgUrl.index03}}'></image>
+    </view>
+  </view>
+  <view class='layoutList'>
+    <view bindtap='goindexabout'>
+      <image src='{{imgUrl.index04}}'></image>
+      <view>品牌介绍</view>
+    </view>
+    <view bindtap='goindexcase'>
+      <image src='{{imgUrl.index05}}'></image>
+      <view>经典案例</view>
+    </view>
+    <view bindtap='goindexnaw'>
+      <image src='{{imgUrl.index06}}' data-catid='35'></image>
+      <view data-catid='35'>集团产业</view>
+    </view>
+    <view bindtap='goindexnaw'>
+      <image src='{{imgUrl.index07}}' data-catid='36'></image>
+      <view data-catid='36'>品质保障</view>
+    </view>
+    <view bindtap='goindexnaw'>
+      <image src='{{imgUrl.index08}}' data-catid='34'></image>
+      <view data-catid='34'>服务流程</view>
+    </view>
+    <view bindtap='goindexteam'>
+      <image src='{{imgUrl.index09}}'></image>
+      <view>设计团队</view>
+    </view>
+    <view bindtap='goindexcase'>
+      <image src='{{imgUrl.index10}}'></image>
+      <view>在建工地</view>
+    </view>
+    <view bindtap='gosultation'>
+      <image src='{{imgUrl.index11}}'></image>
+      <view>咨询攻略</view>
+    </view>
+  </view>
+</view>
+<view class='layoutCenter'>
+  <view class='layoutCenterTitle'>精品案例
+    <text>/为客户提供专业化的解决方案</text>
+  </view>
+  <view class='layoutSwitch'>
+    <view class='layoutSwitchTitle'>
+      <view bindtap='switchTab' class='{{showOrHidden?"active":""}}'>按行业</view>
+      <view bindtap='switchTab' class='{{!showOrHidden?"active":""}}'>按风格</view>
+    </view>
+  
+  <swiper class='swiper' wx:if='{{showOrHidden}}'>
+      <swiper-item  wx:for='{{indexhy}}'  >
+          <view class='layoutSwitchList'>
+
+            <view class='layoutSwitchListSon' wx:for='{{item}}'  wx:for-item="cell" bindtap='goindexhy'>
+              <image src='{{"http://xcx.stzhs.com"+cell[2]}}' data-name='{{cell[0]}}' data-key='{{cell[1]}}'></image>
+              <view data-name='{{cell[0]}}' data-key='{{cell[1]}}'>
+                <text data-name='{{cell[0]}}' data-key='{{cell[1]}}'>{{cell[0]}}</text>
+                <view>点击查看</view>
+              </view >
+            </view>
+        </view>
+      </swiper-item>
+  </swiper>
+
+    <swiper class='swiper' wx:if='{{!showOrHidden}}'>
+      <swiper-item  wx:for='{{indexfg}}'  >
+          <view class='layoutSwitchList'>
+
+            <view class='layoutSwitchListSon' wx:for='{{item}}'  wx:for-item="cell" bindtap='goindexfg'>
+              <image src='{{"http://xcx.stzhs.com"+cell[2]}}' data-name='{{cell[0]}}' data-key='{{cell[1]}}'></image>
+              <view data-name='{{cell[0]}}' data-key='{{cell[1]}}'>
+                <text data-name='{{cell[0]}}' data-key='{{cell[1]}}'>{{cell[0]}}</text>
+                <view data-name='{{cell[0]}}' data-key='{{cell[1]}}'>点击查看</view>
+              </view>
+            </view>
+        </view>
+      </swiper-item>
+  </swiper>
+
+  </view>
+  <view class='layoutCenterTitle'>独家策划
+    <text>/全国优惠活动</text>
+  </view>
+
+  <view class='engineerLayout' wx:for="{{activact}}" bindtap='godeflpro'>
+    <view class='engineerLayoutLeft' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+      <image src='{{"https://xcx.stzhs.com"+ item.thumb}}' data-catid='{{item.catid}}' data-id='{{item.id}}'></image>
+    </view>
+    <view class='engineerLayoutRight' data-catid='{{item.catid}}' data-id='{{item.id}}'>
+      <view class='engineerTitle' data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.title}}</view>
+      <view class='engineerTwoText' data-catid='{{item.catid}}' data-id='{{item.id}}'>{{item.description}}</view>
+      <view class='engineerLastText' data-catid='{{item.catid}}' data-id='{{item.id}}'>活动时间：{{pldate[index]}}</view>
+      <view class='knowMore' data-catid='{{item.catid}}' data-id='{{item.id}}'>了解详情</view>
+    </view>
+  </view>
+
+
+  <view class='bottomLayout'>
+    <image src='{{imgUrl.index14}}' bindtap='goindexcase'></image>
+    <view class='bottomText'>装修热线：0755-29559106
+      <text decode='true'>&nbsp; 拨打热线 </text>
+      <image src='{{imgUrl.index03}}'></image>
+    </view>
+    <view>版权所有：深圳市尚泰装饰设计工程有限公司</view>
+  </view>
+</view>
+ <include src="../template/bottom.wxml" /> 

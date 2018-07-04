@@ -1,0 +1,23 @@
+.bananr{width: 100%;position: relative}
+.fromview{width: 670rpx;position: absolute;top: 10rpx;left: 40rpx;background: rgba(200, 200, 200, 0.5);border-radius: 30rpx;box-sizing: content-box;padding: 8rpx 8rpx}
+.fromview button{background: #b5121c;line-height: 80rpx;color: #fff;font-size: 0.9rem;border-radius: 20rpx;margin-top: 0.8rem}
+.fromview>view{font-size: 0.68rem;color: #b5121c;padding-left: 20rpx;line-height: 50rpx}
+.fromview>text{display: block;text-align: center;font-size: 0.9rem;color: #fff;background: #b5121c;line-height: 2rem;border-radius: 20rpx}
+.fromview label{display: flex;line-height: 2rem;align-items: center;border-radius: 20rpx;border: 1px solid #b5121c;margin-top: 0.8rem;font-size: 0.68rem;color: #b5121c;box-sizing: border-box;width: 100%;padding: 0 20rpx}
+.fromview label text{padding: 0 20rpx}
+.fromview label image{width: 57rpx;height: 56rpx;}
+.fromview label input{color: #edeaea}
+
+.productview{width: 100%;background: #efefef;box-sizing: border-box;padding: 0 20rpx;display: flex;justify-content: space-between;flex-wrap: wrap}
+.productview .pro{width: 220rpx;display: flex;font-size: 0.54rem;line-height: 60rpx;justify-content: center;align-items: center;border: 1px solid #b5121c;border-radius: 30rpx;color: #b5121c;margin-bottom: 20rpx}
+.productview .pro image{width: 45rpx;height: 40rpx;margin-right: 8rpx}
+.productview_t{width: 100%;display: flex;background: #efefef;justify-content: center;padding-bottom: 20rpx}
+.productview_t view{width: 100rpx;font-size: 0.54rem;line-height: 60rpx;color: #b5121c;border:1px solid #b5121c;border-radius: 30rpx;text-align: center;margin: 0 10rpx }
+
+.caseimg{width: 100%;}
+
+.fooder{width: 100%;position: relative}
+.fooder .fooder_t{position: absolute;width: 100%;top: 0;left: 0;padding-top: 80rpx;text-align: center;font-size: 0.68rem;color: #fff}
+.fooder .fooder_t button{width: 45%;line-height: 60rpx;font-size: 0.8rem;color: #fff;margin-top: 10rpx;border-radius: 10rpx;background: #07da89}
+.fooder .fooder_t button:first-of-type{background: #febf25}
+.fooder .fooder_t button:last-of-type{background: #fa5e8c}

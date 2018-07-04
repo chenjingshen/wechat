@@ -1,0 +1,8 @@
+.titleview{width: 100%;display: flex;justify-content: space-between;align-items: center;box-sizing: border-box;padding: 20rpx 40rpx;background: #ededed;font-size: 35rpx;font-weight: bold;color: #040404}
+.titleview image{width: 166rpx;height: 166rpx;border-radius: 100rpx}
+
+.titleviewt{width: 100%; color: #4c4646;margin-bottom: 30rpx}
+.nawperson{width: 100%;box-sizing: border-box;font-size: 30rpx;background: #ededed;margin-top: 30rpx;font-weight: bold}
+.nawperson .nawperson_t{width: 100%;display: flex;padding: 40rpx 30rpx;box-sizing: border-box;border-bottom: 1px solid #fff;line-height: 50rpx}
+.nawperson .nawperson_t image:first-of-type{width: 40rpx;height: 40rpx;margin-right: 20rpx;padding-top: 10rpx}
+/* .nawperson .nawperson_t .texy{width: 20rpx;height: 20rpx;margin-left: auto} */

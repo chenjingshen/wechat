@@ -1,0 +1,18 @@
+.sultationnaw{width: 650rpx;margin: 0 auto;display: flex;justify-content: space-between;padding: 40rpx 0}
+.sultationnaw .sula_t{width: 100rpx;font-size: 0.64rem;text-align: center;color: #110f10;font-weight: bold}
+.sultationnaw .sula_t image{height: 62rpx;width: 62rpx;margin: 0 auto;margin-bottom: 10rpx;}
+.sultationnaw > image{width: 143rpx}
+
+.sultaview{width: 710rpx;margin: 30rpx auto;display: flex;justify-content: space-between;}
+.sultaview image{height: 250rpx;width: 250rpx;box-shadow: 5rpx 2rpx 6rpx 0rpx #b3b2b2;border-radius: 20rpx}
+.sultaview .sultaview_t{width: 437rpx;box-shadow: 0rpx 3rpx 5rpx 5rpx #efeded;padding: 0.3rem 0.6rem;box-sizing: border-box;padding-left: 0.8rem;align-items: center;padding-top: 20rpx}
+
+.sultaview .sultaview_t text{display: block;font-size: 25rpx;padding: 5rpx 0;color: #111111}
+
+.sultaviewcase{width: 100%;text-align: center;font-size: 0.65rem;color: #000;font-weight: bold;padding: 20rpx 0}
+.sultaviewcase .liust{width: 100%;display: flex;justify-content: center;align-items: center}
+.sultaviewcase .liust text:last-of-type{color: #b5121c;display: block;margin: 0 10rpx}
+.sultaviewcase .liust image{width: 20rpx;height: 20rpx}
+
+.titleview{width: 100%;display: flex;justify-content: space-between;align-items: center;box-sizing: border-box;padding: 20rpx 40rpx;background: #ededed;font-size: 35rpx;font-weight: bold;color: #040404}
+.titleview image{width: 166rpx;height: 166rpx;border-radius: 100rpx}

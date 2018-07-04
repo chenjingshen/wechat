@@ -1,0 +1,74 @@
+<view class="container">
+   <image src='{{picturedata.aboutbananr}}' mode='widthFix'></image>
+  <view class='abouttitle'>
+    <view class='title'>
+        <view class='tit'>
+            企业<text>简介</text>
+        </view>
+        <view class='wt'>
+            <text>ENTERPRISE+</text>
+            <text>PROFILE</text>
+        </view>
+    </view>
+    <view class='title_t'>
+        <view class='title_d'>
+          您与上市名企的 <text>共同选择</text>
+        </view>
+          <view class='title_d'>
+          <text>COMMON</text>  CHOICE
+        </view>
+    </view>
+  </view>
+  <view class='aboutjs'>
+     <text>     深圳尚泰装饰集团是一家大型现代化全产业链装饰企业，注册资本2000万元。旗下拥有数百位设计师团队，直属机构遍布华南地区。同时拥有大型生态链创意产业基地、办公家具公司、空调设备工程公司、消防工程公司、墙体工业公司、弱电智能科技公司及装饰周边配套产业联合机构——尚泰会。为大中型办公空间、商业空间客户提供一站式、综合型、系统化的装饰工程解决方案，是绿色、环保、健康的办公空间与商业空间装饰产业引</text>
+     <image src='{{picturedata.aboutcase1}}' mode='widthFix'></image>
+  </view>
+   <view class='abouttite'>
+       <view class='title'>
+        <view class='tit'>
+            资质<text>荣誉</text>
+        </view>
+        <view class='wt'>
+            <text>HONORS+</text>
+            <text>QUALIFICATIONS</text>
+        </view>
+    </view>
+     <view class='tite'>
+          <text>每一次赞誉与认可，都是我们努力奋发的动力</text>
+        </view>
+   </view>
+   <view class='productview'>
+   
+      <view class='casepro' wx:for='{{newdata}}'>
+            <image src='{{"https://xcx.stzhs.com"+item.thumb}}'></image>
+            <text>{{item.title}}</text>
+      </view>
+
+   
+   </view>
+
+
+
+    <button class='caseindexbtn' bindtap='tremmore'>点击加载更多</button>
+       <view class='abouttite'>
+       <view class='title'>
+        <view class='tit'>
+            企业<text>历程</text>
+        </view>
+        <view class='wt'>
+            <text>COMPANY+</text>
+            <text>HISTORY</text>
+        </view>
+    </view>
+     <view class='tite'>
+          <text>十五年务实发展，成为中国城市CBD总部
+办公装饰设计引领者</text>
+        </view>
+   </view>
+  <view class='aboutqyelc'>
+      <image src='{{picturedata.inexabout1}}' mode='widthFix'></image>
+   <image src='{{picturedata.indexabout2}}' mode='widthFix'></image>
+  </view>
+</view>
+
+ <include src="../template/bottom.wxml" /> 

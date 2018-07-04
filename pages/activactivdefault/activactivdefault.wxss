@@ -1,0 +1,12 @@
+/* pages/activactivdefault/activactivdefault.wxss */
+.banner{width: 100%;height: 285rpx;overflow: hidden;}
+.banner image{display: block;
+margin: 0 auto;width: 100%;height: 285rpx;}
+.title{width: 690rpx;margin: 0rem auto;font-size: 30rpx;font-weight: bold;color: #000000;border-left: 3px solid #b5121c;padding-left: 15rpx;margin-top: 0.8rem}
+
+.titleantor{width: 690rpx;margin: 0 auto;padding-bottom: 0.8rem}
+.titleantor text{padding-right: 30rpx;font-size: 30rpx;color: #666;line-height: 40rpx}
+.titleantor text:last-of-type{color: #b5121c;font-weight: bold}
+.content{font-size: 35rpx;width: 710rpx;margin: 0 auto;line-height: 50rpx;overflow: hidden}
+
+.lq{width: 100%;font-size: 30rpx;color: #fff;background: #b5121c;padding: 20rpx 0;margin: 30rpx auto;text-align: center}

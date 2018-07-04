@@ -1,0 +1,31 @@
+<view class='container'>
+  <image src='{{picturedata.indexteambananr}}' mode='widthFix'></image> 
+
+
+  <view class='indexteamqu' wx:for='{{teamdata}}'>
+      <image src='{{"https://xcx.stzhs.com"+item.thumb}}' mode='widthFix'></image>
+      <view class='indexteamqu_t'>
+          <view class='teamqu_t'>
+            <text>团队名称:</text>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='teamqu_t'>
+            <text>擅长领域:</text>
+            <text>{{item.fenge}}</text>
+          </view>
+          <view class='teamqu_t'>
+            <text>团队介绍:</text>
+            <text>{{item.des}}</text>
+          </view>
+      </view>
+    </view>
+
+
+
+ <view class='more' bindtap='tremmore'>
+    点击加载更多
+ </view>
+
+
+</view>
+<include src="../template/bottom.wxml" /> 

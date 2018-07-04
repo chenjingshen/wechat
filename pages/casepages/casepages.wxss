@@ -1,0 +1,52 @@
+.banner{width: 100%;height: 460rpx;overflow: hidden;}
+.banner image{display: block;
+margin: 0 auto;width: 100%;height: 460rpx;}
+
+.casesj_d{width: 690rpx;margin: 0 auto;display: flex;align-items: center;padding: 0.8rem 0}
+.casesj_d image{width: 192rpx;height: 192rpx;border: 1px solid #9b2b2d;border-radius: 100rpx}
+.casesj_d .casejs{width: 498rpx;box-sizing: border-box;font-size: 0.6rem;padding: 0 20rpx}
+.casesj_d .casejs text{display: block;padding: 0.1rem 0;color: #666}
+.casesj_d .casejs .tt{color: #0a0a0a;font-weight: bold}
+
+.casebtn{font-size: 0.54rem;color: #fff;line-height: 60rpx;background: #961010;width: 250rpx;text-align: center;border-radius: 30rpx;margin-left: auto;margin-right: 30rpx;margin-top: -30rpx}
+
+.caseliyan{font-size: 0.6rem;color: #666;width: 690rpx;margin: 0 auto;padding: 0.8rem 0}
+.caseliyan text:first-of-type{display: block;color: #111;font-weight: bold;line-height: 1.3rem}
+
+.caseange{width: 100%;background: #ededed;padding-bottom: 1rpx;box-sizing: border-box}
+.caseange text{display: block;width: 100%;padding: 0 30rpx;font-size: 0.6rem;font-weight: bold;line-height: 60rpx;border-bottom: 2px solid #fff;box-sizing: border-box}
+.caseange .caseange_img{width: 690rpx;display: flex;margin: 0.6rem auto;justify-content: space-between}
+.caseange .caseange_img image{width: 200rpx;height: 200rpx}
+
+.textview{width: 100%;display: flex;box-sizing: content-box;justify-content: space-between;font-size: 0.6rem;border-bottom: 1px solid #b3b3b3}
+.textview text{display: block;padding: 15rpx 30rpx;font-weight: bold;color: #0a0a0a}
+.casepagespln{width: 100%;padding-top: 20rpx}
+.casepagespln .casepagespln_i{width: 690rpx;margin: 0.3rem auto;font-size: 0.6rem;color: #961010;display: flex;align-items: center;justify-content: flex-end}
+.casepagespln .casepagespln_i image{width: 22rpx;height:19rpx;margin: 0 10rpx}
+
+.casepagespln_con{width: 100%;display: flex;border-bottom: 1px solid #b3b3b3;position: relative;padding-top: 20rpx}
+.casepagespln_con:last-of-type{border-bottom: none}
+.casepagespln_con >image{width: 50rpx;height: 50rpx;border-radius: 25rpx;margin-left: 50rpx}
+.casepagespln_con .casepagespln_cont{padding-left: 20rpx}
+.casepagespln_con .casepagespln_cont{padding-left: 20rpx;font-size: 0.6rem;line-height: 0.86rem;color: #666}
+.casepagespln_cont >text:first-of-type{display: block;}
+.casepagespln_cont >text:last-of-type{color: #0a0a0a}
+.casepagespln_cont .tt{padding: 15rpx 0}
+.casepagespln_cont .tt text{padding-right: 18rpx;}
+.casepagespln_con .casepagesgd{position: absolute;bottom: 20rpx;right: 50rpx;display: flex;font-size: 0.56rem;color: #666;align-items: center}
+.casepagespln_con .casepagesgd image{width: 17rpx;height: 21rpx;margin-right: 20rpx}
+
+.casepp{border-bottom: none!important}
+
+.formsa{width: 690rpx;margin: 0 auto;margin-top: 30rpx}
+.formsa textarea{width: 100%;height: 160rpx;border: 1px solid #c4c4c4;box-sizing: border-box;padding: 0.5rem 30rpx;font-size: 0.58rem;color: #111}
+.cas{font-size: 0.58rem;}
+.formsa button{width: 250rpx;background: #961010;color: #fff;margin: 0.8rem auto;display: inline-block;margin-left: 440rpx;font-size: 0.65rem;line-height: 50rpx}
+.listcase_m{width: 100%;display: flex}
+.listcase_m .listcase_m_d{display: flex;align-items: center;padding: 0.6rem 1rem;box-sizing: border-box;font-size: 0.68rem;color: #666}
+.listcase_m image{width: 37rpx;height: 40rpx;display: block;margin-right: 0.5rem}
+
+.authorhuif{width: 100%;box-sizing: border-box;padding: 15rpx 0;padding-left: 120rpx;border-bottom: 1px solid #b3b3b3;}
+.authorhuif text:first-of-type{display: block;font-size: 20rpx;color: #666;width: 100%;box-sizing: border-box;padding-left: 10rpx;border-left: 5rpx solid #961010;line-height: 20rpx;margin: 5rpx 0}
+.authorhuif text:nth-of-type(2){display:block;font-size: 20rpx;color: #0a0a0a;padding: 10rpx 0;width: 100%;box-sizing: border-box;padding-left: 10rpx}
+.authorhuif text:nth-of-type(3){display: block;font-size: 16rpx;color: #666;line-height: 25rpx;box-sizing: border-box;padding-left: 10rpx}

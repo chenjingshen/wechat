@@ -1,0 +1,28 @@
+.title{width: 100%;padding-left: 96rpx;box-sizing: border-box;display: flex;align-items: center;}
+.title .tit{font-size: 1rem;font-weight: bold;color: #231f20;line-height: 1.5rem}
+.title .tit text{background: #b5121c;color: #fff;padding: 0 5rpx}
+.title .wt{padding-left: 10rpx}
+.title .wt text:first-of-type{display: block;font-size: 0.5rem;color: #777777}
+ .title .wt text:last-of-type{display: block;font-size: 0.8rem;font-weight: bold} 
+
+ .abouttitle{width: 100%;padding-top: 20rpx;padding-bottom: 20rpx}
+ .title_t{width: 710rpx;margin: 0 auto;padding-left: 76rpx;margin-top: 10rpx;box-sizing: border-box}
+  .title_t .title_d{font-size: 1rem;font-weight: bold;width: 100%;line-height: 1.5rem;border-bottom: 1px solid #e6e6e6;color: #231f20}
+  .title_t .title_d:last-of-type{border-bottom: none}
+  .title_t .title_d text{color: #b5121c}
+
+  .aboutjs{width: 550rpx;margin: 0 auto;font-size: 0.64rem;line-height: 1.2rem;color: #b3b3b3}
+  .aboutjs image{margin:  0.8rem auto}
+
+  .tite{width: 710rpx;margin: 0 auto;box-sizing: border-box;padding-left: 76rpx;font-size: 0.64rem;color: #b3b3b3}
+.tite text{display: block;width: 100%;border-top: 1px solid  #b0b0b0;padding: 10rpx 0}
+
+.productview{width: 570rpx;margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: space-between;padding-top: 18rpx}
+.productview .casepro{width: 246rpx;}
+.productview .casepro image{height: 188rpx}
+.productview .casepro text{font-size: 0.54rem;color: #b3b3b3;display: block;padding: 0.5rem 0;text-align: center}
+
+.caseindexbtn{width: 300rpx;font-size: 0.64rem;line-height: 1.3rem;border-radius: 20rpx;color: #515151;border: 1px solid #515151;background: #fff;margin: 0.3rem auto;margin-bottom: 0.8rem}
+.caseindexbtn:after{border: none}
+
+.aboutqyelc{width: 100%;padding-top: 20rpx}

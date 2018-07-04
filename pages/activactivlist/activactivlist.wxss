@@ -1,0 +1,13 @@
+.sultationnaw{width: 650rpx;margin: 0 auto;display: flex;justify-content: space-between;padding: 40rpx 0}
+.sultationnaw .sula_t{width: 100rpx;font-size: 0.64rem;text-align: center;color: #110f10;font-weight: bold}
+.sultationnaw .sula_t image{height: 62rpx;width: 62rpx;margin: 0 auto;margin-bottom: 10rpx;}
+.sultationnaw > image{width: 143rpx}
+
+.sultaview{width: 650rpx;margin:0 auto}
+.sulaviewlst{width: 650rpx;margin: 0 auto;display: flex;padding-top: 40rpx}
+.sulaviewlst image{width: 258rpx;height: 258rpx}
+.sulaviewlst .sulist{width: 392rpx;box-sizing: border-box;padding: 0 20rpx;}
+.sulaviewlst .sulist text:first-of-type{font-size: 35rpx;font-weight: bold;color: #131112;display: block}
+.sulaviewlst .sulist text:nth-of-type(2){font-size: 30rpx;font-weight: bold;color: #131112;display: block;padding: 10rpx 0}
+.sulaviewlst .sulist text:nth-of-type(3){font-size: 18rpx;line-height: 30rpx;display: block;color: #666}
+.tt{color: #961010}

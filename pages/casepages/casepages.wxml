@@ -1,0 +1,85 @@
+<view class="container">
+   <swiper class="banner" indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" 
+      duration="{{duration}}" indicator-color="#fff" indicator-active-color="#961010">
+      <block wx:for="{{casepage.albums}}" >
+            <swiper-item >
+              <image src="{{'https://xcx.stzhs.com'+item.url}}" class="slide-image" />
+            </swiper-item>
+       </block>
+    </swiper>
+
+    <view class='casesj_d'>
+       <image src='{{"https://xcx.stzhs.com"+casepage.man.thumb}}'></image>
+       <view class='casejs'>
+            <text class='tt'>设计师：{{casepage.man.title}}</text>
+            <text class='tt'>项目名称：{{casepage.fx}}</text>
+            <text>项目地址：{{casepage.lp}}</text>
+            <text>项目面积：{{casepage.mj}}</text>
+            <text>设计风格：{{casepage.fg}}</text>
+       </view>
+    </view>
+         <view class='listcase_m'>
+             <view class='listcase_m_d' bindtap='addgood'>
+               <image src='{{isdianzhan?picturedata1.list11:picturedata1.list11_1}}' mode='widthFix' ></image>
+               <text>{{dianz}}</text>
+             </view>
+             <view class='listcase_m_d'  bindtap='Collection'>
+               <image src='{{isCollection?picturedata1.list22:picturedata1.list22_1}}' mode='widthFix'></image>
+               <text>{{shangc}}</text>
+             </view>
+             <!-- <view class='listcase_m_d'>
+               <image src='{{picturedata1.list33_1}}' mode='widthFix'></image>
+             </view> -->
+    </view>
+    <view class='casebtn' bindtap='getsj'> 预约设计</view>
+    <view class='caseliyan'>
+        
+        <rich-text class="rich" nodes="{{content}}" ></rich-text>
+    </view>
+    <view class='caseange'>
+        <text>相关推荐</text>
+        <view class='caseange_img'>
+           <image src='{{"https://xcx.stzhs.com"+item.thumb}}' wx:for='{{caseadds}}' data-catid='{{item.catid}}' data-id='{{item.id}}'  wx:if='{{index<3}}' bindtap='gocasepage'></image>
+           
+        </view>
+    </view> 
+    <view class='textview'>
+        <text>评论：{{casepage.comment_count}}</text>
+        <text>赞:{{dianz}}</text>
+    </view>
+    <view class='casepagespln'>
+         <block wx:for='{{pldata}}' if:for='{{pldata}}'> 
+            <view class='casepagespln_con {{item.child[0].date?"casepp":""}}' >
+                <image src='{{item.avatarUrl}}'></image>
+                <view class='casepagespln_cont'>
+                  <text>{{item.author}}</text>
+                  <text>{{item.content}}
+                  </text>
+                    <view class='tt'>
+                      <text>{{pldate[index]}}</text><text> {{plsm[index]}}</text>
+                    </view>
+                 </view>
+                  <view class='casepagesgd' data-index='{{index}}' data-commentid='{{item.id}}' bindtap='commentid'>
+                    <image src='{{picturedata.casepagesgd}}'  data-commentid='{{item.id}}' data-index='{{index}}'></image> 
+                    <text data-commentid='{{item.id}}' data-index='{{index}}'>{{item.vote_count}}</text>
+                  </view>
+             </view>
+             <view class='authorhuif' wx:if="{{item.child[0].date}}">
+                <text>作者回复</text>
+                <text>{{item.child[0].content}}</text>
+                <text>{{item.child[0].date}}</text>
+             </view>
+         </block> 
+    </view>
+   
+    <view class='formsa'>
+        <form bindsubmit="formSubmit" >
+          <textarea placeholder='请输入' placeholder-class='cas' name="pl" value="{{form_info}}"></textarea>
+          <button  formType="submit">提交</button>
+        </form>
+    </view>
+
+</view>
+
+ <include src="../template/bottom.wxml" /> 
